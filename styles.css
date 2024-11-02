@@ -1,0 +1,962 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+nav {
+    background-color: #005A4D; /* Dark Green */
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.8em;
+    color: #fff;
+    font-weight: 700;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    color: #fff;
+    font-weight: 700;
+}
+
+.call-us {
+    margin-right: 5px;
+}
+
+.phone-number {
+    color: #FFC107;
+    text-decoration: underline;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FFC107;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center; /* Vertically centers the content */
+    justify-content: flex-start; /* Aligns the content to the left */
+    padding: 150px 20px;
+    padding-left: 200px;
+     background: url('drive-download-20241023T172904Z-001/solar-panels-meadow 1.png') no-repeat center center/cover;
+    color: #fff;
+    /*height: 100vh; /* Ensure the hero section takes the full viewport height */
+}
+
+.hero-content {
+    max-width: 600px; /* Limit the width of the text content */
+    margin-left: 50px; /* Add some left margin to create space from the edge */
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    font-size: 1em;
+    margin: 20px 0;
+}
+.cta-button {
+    background-color:#005A4D; /* Keep the blue background */
+    color: white;                       /* Text color */
+    padding: 15px 30px;                 /* Padding */
+    border-radius: 30px;                 /* Round corners */
+    text-decoration: none;               /* Remove underline */
+    display: inline-block;               /* Ensure block element */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition */
+}
+
+.learn-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    background-color: #FFC107;           /* Background color */
+    color: #005A4D;                       /* Text color */
+    text-decoration: none;                /* Remove underline */
+    border-radius: 30px;                   /* Round corners */
+    transition: background-color 0.3s ease; /* Add transition */
+}
+
+.cta-button:hover {
+    background-color: rgb(0, 76, 204);   /* Darker shade of blue on hover */
+    color: #FFC107;                       /* Change text color to match learn-button */
+}
+
+.learn-button:hover {
+    background-color: #ffdb4d;           /* Change background color on hover */
+}
+
+
+/* About Section */
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #005A4D;
+}
+
+.service-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 30%;
+    display: inline-block;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+blockquote {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 4px solid #FFC107;
+    font-style: italic;
+}
+
+footer {
+    background-color: #005A4D;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.left-aligned-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px; /* Overall padding */
+    padding-left: 100px; /* Move the section more to the right */
+    padding-top: 30px;
+    max-width: 600px; /* Adjust based on your needs */
+  }
+  .installers-header {
+    line-height: 1.2;
+    font-size: 36px; /* Adjust this value to make it larger */
+    font-weight: bold; /* Make the text bold */
+  }
+  
+  .sustainable-info {
+    font-size: 10px; /* Adjust this value as needed */
+    line-height: 1.5; /* Optional: Adjust line height for readability */
+    color: #333;
+    margin-bottom: 15px;
+    font-size: inherit;
+  }
+ 
+  .left-aligned-section h2,
+  
+  .left-aligned-section ul,
+  .left-aligned-section button {
+    margin-bottom: 15px;
+    color: black;
+    font-size: inherit; /* Inherit font size from parent, or set individually if needed */
+  }
+  
+  .left-aligned-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .left-aligned-section li {
+    margin-bottom: 10px;
+  }
+  
+  .numbered-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+  }
+  
+  .numbered-list li {
+    margin-bottom: 10px; /* Space between items */
+    font-weight: bold; /* Make text bold */
+  }
+  
+  .number {
+    color: #1bba33; /* Change this to your desired color */
+    font-weight: bold; /* Ensure the number is also bold */
+    margin-right: 5px; /* Space between number and text */
+  }
+  .container {
+    display: flex;
+    align-items: flex-start; /* Aligns the items at the top */
+    gap: 20px; /* Space between the section and the image */
+  }
+  
+  .installers-image {
+    padding-top:50px ;
+    max-width: 400px; /* Adjust this to your preferred size */
+    height: auto; /* Keeps the aspect ratio of the image */
+  }
+
+  .power-section {
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
+    padding: 60px 100px;
+    background: linear-gradient(120deg, #80BF84, #a4c6a5);
+    margin-top: 60px;
+    
+}
+
+.power-section .text-content {
+    padding-top: 40px;
+    padding-left: 160px;
+    flex: 1;
+    max-width: 50%;
+}
+
+.power-section h2 {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.power-section p {
+    font-size: 1em;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.phone-link {
+    color: #005A4D;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.phone-link:hover {
+    text-decoration: underline;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #FFCC00;
+    color: black;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #FFAA00;
+}
+
+.power-section .image-content {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.power-section .image-content img {
+    max-width: 60%;
+    height: auto;
+}
+
+
+
+.solar-kits-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #F8F9FA; /* Light background */
+    max-width: 1200px; /* Set the maximum width */
+    margin: 0 auto; /* Center the section */
+}
+
+.section-header h2 {
+    font-size: 2em; /* Make the title a bit smaller */
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 30px; /* Reduce the gap below the description */
+}
+
+.kits-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px; /* Reduce the gap between cards */
+}
+
+.kit-card {
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 15px; /* Reduce padding inside the cards */
+    width: calc(30% - 10px); /* Make the cards smaller */
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.kit-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px; /* Reduce gap below the image */
+}
+
+.kit-card h3 {
+    font-size: 1.3em; /* Reduce font size of titles */
+    color: #333;
+    margin-bottom: 10px; /* Reduce gap below titles */
+}
+
+.kit-card p {
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: 15px; /* Reduce gap below text */
+}
+
+.view-products-link {
+    font-size: 0.95em;
+    color: #28A745; /* Green color */
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.view-products-link span {
+    font-size: 1.1em; /* Adjust arrow size */
+}
+
+.view-products-link:hover {
+    text-decoration: underline;
+}
+
+/* Section with background image and overlay */
+.repairs-section {
+  background-image: url('your-image-path.jpg'); /* Add your image here */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  position: relative;
+  text-align: center;
+}
+
+.overlay-container {
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  padding: 60px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.overlay-content h1 {
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.overlay-content p {
+  color: #fff;
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Energy Innovators Section */
+.energy-innovators-section {
+  padding: 60px 20px;
+  background-color: #F8F9FA;
+}
+
+.left-content {
+  max-width: 300px;
+}
+
+.left-content h2 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.left-content p {
+  font-size: 1.1em;
+  color: #666;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 20px;
+}
+
+.card {
+  background-color: #EAF4EE;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  font-size: 1.4em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.card a {
+  font-size: 1em;
+  color: #28A745; /* Green color for the link */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+/* Section with background image and overlay */
+.repairs-section {
+    background-image: url('drive-download-20241023T172904Z-001/8116 1 (1).png');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .overlay-container {
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    padding: 60px;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  .overlay-content h1 {
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .overlay-content p {
+    color: #fff;
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Energy Innovators Section */
+  .energy-innovators-section {
+    padding: 60px 20px;
+    background-color: #F8F9FA;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  
+  .left-content {
+    max-width: 300px;
+  }
+  
+  .left-content h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .left-content p {
+    font-size: 1.1em;
+    color: #666;
+  }
+  
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #EAF4EE;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .card h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .card a {
+    font-size: 1em;
+    color: #28A745;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .card a:hover {
+    text-decoration: underline;
+  }
+  
+  .our-values {
+    text-align: center;
+    padding: 50px 20px;
+    margin: 50px auto;
+    max-width: 1200px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.our-values h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.our-values .subtitle {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.values-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.value-card {
+  flex: 1;
+  max-width: 30%;
+  padding: 25px;
+  border: 2px solid #50b56b; /* Green border color */
+  border-radius: 10px;
+  text-align: left;
+  background-color: #f7faf8;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+.value-card img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.value-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.value-card p {
+    color: #666;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+  
+  .testimonials {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 50px 20px;
+    background-color: #ffffff;
+  }
+  
+  .testimonial-text-section h2 {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: lowercase;
+  }
+  
+  .subtitle {
+    font-size: 1em;
+    color: #666;
+  }
+  
+  .testimonial-card {
+    flex: 1;
+    padding: 30px;
+    background-color: #f5f7fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial-header {
+    font-size: 0.9em;
+    color: #50b56b;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-text {
+    font-size: 1.1em;
+    color: #333;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .testimonial-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .author-name {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .author-title {
+    font-size: 0.8em;
+    color: #666;
+  }
+  
+  .testimonial-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .nav-btn {
+    background: none;
+    border: 1px solid #333;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 1em;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nav-btn:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .footer {
+    
+    background-color: #1d2d3f;
+    color: #fff;
+    padding: 40px;
+    width: 100%;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-links a {
+    color: #b0b8c1;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #fff;
+  }
+  
+  .footer-subscription p {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+  }
+  
+  .subscription-form {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .subscription-form input {
+    padding: 10px;
+    font-size: 0.9em;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+  }
+  
+  .subscription-form button {
+    padding: 10px 20px;
+    font-size: 0.9em;
+    background-color: #ffc107;
+    color: #1d2d3f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .subscription-form button:hover {
+    background-color: #ffca2c;
+  }
+  .footer img {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+    padding-right: 10px;
+  }
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8em;
+    color: #b0b8c1;
+    margin-top: 20px;
+    padding-left: 120px;
+  }
+  
+  .footer-bottom p {
+    
+    margin: 0;
+  }
+  @media (max-width: 768px) {
+    /* Container */
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px; /* Add padding for better spacing */
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 60px 20px; /* Adjust padding for mobile */
+        text-align: center; /* Center text */
+    }
+
+    .hero-content {
+        margin: 0; /* Center content without margins */
+        text-align: center; /* Center text */
+    }
+
+    /* Service Cards */
+    .service-card {
+        width: 90%; /* Full width on mobile */
+        margin: 10px 0; /* Reduce margin between cards */
+        text-align: center; /* Center text within cards */
+        padding: 15px; /* Add padding for better spacing */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    }
+
+    /* Power Section */
+    .power-section {
+        flex-direction: column; /* Stack content vertically */
+        padding: 40px 20px; /* Adjust padding */
+        text-align: center; /* Center text */
+    }
+
+    .power-section .text-content {
+        padding: 0; /* Remove left padding */
+        max-width: 100%; /* Allow full width */
+    }
+
+    /* Kits Container */
+    .kits-container {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center cards */
+    }
+
+    .kit-card {
+        width: 90%; /* Full width for kit cards */
+        margin-bottom: 15px; /* Margin between cards */
+        padding: 15px; /* Add padding for better spacing */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+        text-align: center; /* Center text within cards */
+    }
+
+    /* Contact Info */
+    .contact-info {
+        flex-direction: column; /* Stack contact info vertically */
+        margin: 20px 0; /* Add margin for spacing */
+        align-items: center; /* Center items */
+    }
+
+    .call-us,
+    .phone-number {
+        margin-bottom: 5px; /* Space between elements */
+        text-align: center; /* Center text */
+    }
+
+    /* Navigation Links */
+    .nav-links {
+        flex-direction: column; /* Stack nav links vertically */
+        align-items: center; /* Center links */
+        padding: 0; /* Remove padding */
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Space between links */
+        text-align: center; /* Center text */
+    }
+
+    /* Footer */
+    footer {
+        font-size: 0.8em; /* Smaller footer text */
+        padding: 10px; /* Add padding for spacing */
+    }
+
+    footer p {
+        margin: 5px 0; /* Space between footer elements */
+        text-align: center; /* Center footer text */
+    }
+
+    /* Buttons */
+    .btn {
+        width: 100%; /* Full width on mobile */
+        padding: 12px; /* Increase padding for touch targets */
+        font-size: 1em; /* Larger font size for better readability */
+        margin: 10px 0; /* Margin between buttons */
+        text-align: center; /* Center text on buttons */
+        border-radius: 5px; /* Rounded corners for buttons */
+    }
+
+    /* Images */
+    img {
+        max-width: 100%; /* Responsive images */
+        height: auto; /* Maintain aspect ratio */
+        margin: 10px 0; /* Space around images */
+    }
+
+    /* Headings */
+    h1, h2, h3 {
+        text-align: center; /* Center headings */
+        margin: 15px 0; /* Space around headings */
+    }
+
+    /* Additional Elements */
+    .additional-element {
+        padding: 15px; /* Padding for additional elements */
+        text-align: center; /* Center text */
+        margin: 10px 0; /* Margin for spacing */
+    }
+
+    /* Custom Sections */
+    .custom-section {
+        padding: 20px; /* Padding for custom sections */
+        margin: 15px 0; /* Margin for spacing */
+        text-align: center; /* Center text */
+    }
+}
